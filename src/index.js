@@ -6,6 +6,12 @@ app.get('/', (req, res) => {
     res.send('<h1>Express Demo API</h1><p>Status: Online</p><hr><div>It is working!!!</div>');
 });
 
+app.get('test', (req, res) => {
+    res.json({
+        hello: 'world!!!',
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}`);
 });
