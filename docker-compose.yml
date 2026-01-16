@@ -1,0 +1,11 @@
+services:
+  demo-app:
+    container_name: express-demo-container
+    build: .
+    restart: always
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
