@@ -20,5 +20,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/node-vps-demo
-            git pull origin master
+            git pull origin main
             docker compose up -d --build
